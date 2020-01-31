@@ -54,36 +54,32 @@ public class MainActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()) {
 
-                    case 1:
+                    case 1: //catergories
                         setCustomView(1, 0, 2, 3);
                         setTextAndImageWithAnimation("CATEGORIES", R.drawable.ic_categories);
-                        //change to the fragment which you want to display
-                        handleFragment(new HomeFragment());
+
+                        handleFragment(new CategoriesFragment());
                         break;
 
-                    case 2:
+                    case 2: //settings
                         setCustomView(2, 1, 0, 3);
                         setTextAndImageWithAnimation("SETTINGS", R.drawable.ic_settings);
-                        //change to the fragment which you want to display
-                        handleFragment(new HomeFragment());
+
+                        handleFragment(new SettingsFragment());
                         break;
 
                     case 3:
                         setCustomView(3, 1, 2, 0);
                         setTextAndImageWithAnimation("PROFILE", R.drawable.ic_person);
-                        //change to the fragment which you want to display
-                        handleFragment(new HomeFragment());
+
+                        handleFragment(new ProfileFragment());
                         break;
                     case 0:
-                        //3 methods will be used in each case.
-                        //method 1 : custom view(selected tab, non selected tabs) -> done
-                        //method 2 : set text and image in tab with animation -> done
-                        //method 3 : set fragment
 
                     default:
                         setCustomView(0, 1, 2, 3);
                         setTextAndImageWithAnimation("HOME", R.drawable.ic_home);
-                        //change to the fragment which you want to display
+
                         handleFragment(new HomeFragment());
                         break;
                 }

@@ -114,7 +114,7 @@
             app:tabGravity="center"
             app:tabIconTint="@android:color/darker_gray"
             app:tabIndicator="@null"
-            app:tabMinWidth="40dp"
+            app:tabMinWidth="60dp"
             app:tabMode="scrollable"
             app:tabRippleColor="@null">
 
